@@ -3,40 +3,93 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  A plan is just a tangent vector on the manifold of reality.
+  \byline{``Scratch'' Garrison} % who is this?!
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  Define $T_p M$, the \textbf{tangent space} to a manifold $M$ at the
+  point $p$.
+\end{problem}
+
+\begin{problem}
+  Define \textbf{submersion} and \textbf{immersion} and \textbf{local diffeomorphism}.
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+  Consider the circle $S^1 \ni x_1, x_2$ with $x_1 \neq x_2$, giving
+  rise to an open cover $\mathcal{U} = \{ U_1, U_2 \}$ with
+  $U_i = S^1 \setminus \{x_i\}$ and charts $(U_i,\varphi_i)$.
+
+  Explicitly describe a partition of unity subordinate to
+  $\mathcal{U}$ in the sense of describing smooth functions
+  $f_i : S^1 \to \R$ with the support of $f_i$ contained in $U_i$.
+\end{problem}
+
+\begin{problem}
+  The Lie group $O(n)$ consists of orthogonal $n \times n$ matrices.
+
+  Describe $T_{\id} O(n)$ as a collection of certain matrices.
+\end{problem}
+
+\begin{problem}
+  Let $H : S^3 \to S^2$ be the Hopf map.
+
+  Compute $dH_p : T_p S^3 \to T_{H(p)} S^2$ and verify that $H$ is a
+  submersion.
 \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+  The textbook explored the local structure of immersions; let's do submersions.
+  
+  The smooth map $f : X \to Y$ is a \textbf{local submersion} at
+  $x \in X$ if $df_x : T_x X \to T_{f(y)} Y$ is surjective.  Show that
+  there are charts $(U,\phi)$ with $x \in U \subset X$ and $(V,\psi)$
+  with $f(x) \in V \subset Y$ so that
+  $\psi \circ f \circ \phi^{-1} : \phi(U) \to \psi(V)$ is the
+  canonical projection map
+  $(v_1,\ldots,v_{\dim X}) \mapsto (v_1,\ldots,v_{\dim Y})$.
 \end{problem}
+
+\begin{problem}
+  For a smooth map $f : X \to Y$, we say that $y \in Y$ is a
+  \textbf{regular value} if, whenever $x \in f^{-1}(y)$, the map
+  $df_x : T_x X \to T_y Y$ is surjective.  When $y \in Y$ is not a
+  regular value, we say it is a \textbf{critical value}.
+
+  Show that $f^{-1}(y)$ is a submanifold.
+
+  What is the dimension of this submanifold?
+\end{problem}
+
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
+Recall that we used bump functions (among other things) to show that
+every compact $n$-manifold embeds in $S^N$ for some large $N$.
+
 \begin{problem}
-  Something that may be wrong.
+  Every $n$-manifold smoothly surjects onto $S^n$.
+\end{problem}
+
+\begin{problem}
+  If $f : V \to W$ is a linear map and $v \in V$, then $df_v$ is $f$.
+
+  (In other words, the derivative of a linear map is itself.)
+\end{problem}
+
+\begin{problem}
+  The intersection of two submanifolds is a submanifold.
 \end{problem}
 
 \end{document}
