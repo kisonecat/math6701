@@ -3,40 +3,85 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  Now that we have seen that superluminal communication is not
+  possible, we turn to the more prosaic task of writing tensor
+  products using standard bases.  \byline{Chris Bernhardt, in
+    \textit{Quantum Computing for Everyone}, page 64.}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  What is the \textbf{bracket} of vector fields?
+\end{problem}
+
+\begin{problem}
+  What is meant by the \textbf{codimension} of a submanifold $N^n \subset M^m$?
+\end{problem}
+
+\begin{problem}
+  What does it mean to say that a smooth map $f : X \to Y$ is
+  \textbf{transverse} to a submanifold $Z \subset Y$?
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+  For a nonzero vector $v \in \R^3$, let $R(v,\theta)$ denote
+  counterclockwise rotation around the axis $v$.  Define a map $f :
+  S^1 \times S^1 \times S^1 \to \SO(3)$ by sending
+  $(\theta_1,\theta_2,\theta_3) \in (S^1)^3$ to the rotation
+  $$
+  R(\textbf{x},\theta_1) \circ R(\textbf{y},\theta_2) \circ R(\textbf{x},\theta_3) \in \SO(3).
+  $$
+  Here, $\textbf{x}$ and $\textbf{y}$ denote the unit vectors
+  $(1,0,0)$ and $(0,1,0)$, respectively.  Show that $f$ is not
+  a submersion.
+
+  \textit{Note:} When you are controlling a system, you may have only
+  infinitesimal control over the inputs---and if the function is not a
+  submersion, you then do not have complete (albeit, infinitesimal!)
+  control over the outputs.  This problem---known as gimbal lock---was
+  experienced by the astronauts of Apollo~11.
 \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+  Consider $M = S^1 \times \R^2$; a point $(\theta,x) \in M$
+  corresponds to a position of an automobile $x \in \R^2$, and the
+  angle $\theta$ of its wheels.
+
+  Suppose $F \in \Gamma(TM)$ is the ``drive in the direction of the
+  wheels'' vector field, and $T \in \Gamma(TM)$ is the ``turn steering
+  wheel'' vector field.  What is $[F,T]$ and how does this help with
+  parking the car?
+\end{problem}
+
+\begin{problem}
+  Let $V = \R^3$, and consider the map $s : V \to \Sym^2
+  V$ which sends $s(v)$ to $v \cdot v$.  This map $s$ is not linear, but
+  $s$ induces a map $\Proj(s) : \Proj(V) \to \Proj(\Sym^2 V)$ sending lines to lines.
+
+  Is $\Proj(s)$ a smooth map?  Compute its derivative
+  $\Proj(s)_\star : T\RP^2 \to T\RP^5$.
+
+  Is $\Proj(s)$ a smooth embedding?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+  The real projective space $\RP^n$ is orientable.
 \end{problem}
+
+\begin{problem}
+  There is a smooth vector field on $S^2$ which vanishes at exactly one point.
+\end{problem}
+
 
 \end{document}
