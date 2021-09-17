@@ -3,40 +3,90 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  % https://twitter.com/metaweta
+  Old MacDonald had a form, $e_i \wedge e_i = 0$. \byline{Mike Stay}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  What is an \textbf{exact} differential form?  A \textbf{closed} form?
 \end{problem}
 
 \section{Numericals}
 
-\begin{problem}
-  Compute something.
+% Baker-Campbell-Hausdorff for the Heisenberg group
+\begin{problem} Let $H$ be the Lie group of $3 \times 3$ matrices of
+the form 
+  $\displaystyle\begin{pmatrix}
+    1 & a & b \\
+    0 & 1 & c \\
+    0 & 0 & 1
+  \end{pmatrix}$ for $a, b, c \in \R$, and set $\mathfrak{h} := T_e H$
+so that $v \in \mathfrak{h}$ gives rise to the left-invariant vector
+field $X_v$ with $X_v(e) = v$; the function $\theta_{v} : H \times \R
+\to H$ is the flow along this vector field, and the exponential map
+$\exp : \mathfrak{h} \to H$ is defined by $\exp(v) = \theta_v(e,1)$.
+
+When $\exp c = (\exp a) \cdot (\exp b)$, find a formula for $c$ in
+terms of $a, b \in \mathfrak{h}$.  Your formula will permit you to do
+calculations in the Heisenberg group $H$ by doing calculations in its Lie
+algebra $\mathfrak{h}$.
 \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+Write ``$H^k(M) = 0$'' to mean that every closed $k$-form on $M$ is exact.
+
+  Suppose for open subsets $U, V \subset M$ with $U \cap V =
+  \varnothing$, we have $H^1(U) = 0$ and $H^1(V) = 0$.
+
+  What additional condition might you impose to ensure $H^1(U \cup V)
+= 0$?
 \end{problem}
+
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
-\begin{problem}
-  Something that may be wrong.
+\begin{problem} Fix pointwise linearly independent forms $\omega_1
+\ldots, \omega_n \in \Omega^1(M)$.
+
+  Then $\eta_1, \ldots, \eta_n \in \Omega^1(M)$ satisfy $\sum_i \eta_i \wedge \omega_i = 0$ iff there exist $f_{ij} \in C^\infty(M)$ so that $\eta_i = \sum_j f_{ij} \omega_j$ and $f_{ij} = f_{ji}$.
 \end{problem}
+
+\begin{problem} For vector fields $X, Y \in \Gamma(TM)$ and a 1-form
+$\omega \in \Omega^1(M)$,
+\[
+  d\omega(X,Y) = X(\omega (Y)) - Y(\omega(X)) - \omega([X,Y]).
+\]
+\end{problem}
+
+% Credit to https://twitter.com/JulesJacobs5/status/1437415867185344517
+\begin{problem} Suppose $U \subset \R^2$ and $x,y,z: U \to \R$ are
+smooth functions with the property that any pair of the two provides
+local coordinates on $U$.  Then
+  \[
+    \left. \frac{\partial x}{\partial y} \right|_{z} 
+    \left. \frac{\partial y}{\partial z} \right|_{x} 
+    \left. \frac{\partial z}{\partial x} \right|_{y} = 1. % salvage to -1 
+  \] \textit{Hint:} The notation $\left. \frac{\partial x}{\partial y}
+\right|_{z}$ means the partial derivative of $x$ with respect to $y$,
+when $x$ is expressed as a function of $y$ and $z$.  Use the fact that
+$\left. \frac{\partial x}{\partial y} \right|_{z} = \frac{dx \wedge
+dz}{dy \wedge dz}$.
+\end{problem}
+
+\newcommand{\respectively}[2]{$\genfrac\{\}{0pt}{0}{\mbox{#1}}{\mbox{#2}}$}
+
+\begin{problem} If $\omega \in \Omega^k(M)$ and $\eta \in
+\Omega^{\ell}(M)$ are \respectively{closed}{exact}, then $\omega
+\wedge \eta$ is \respectively{closed}{exact}.
+\end{problem}
+
 
 \end{document}
