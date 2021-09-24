@@ -3,40 +3,80 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
-\begin{inspiration}
-  Some words
-  \byline{A Person}
+\begin{inspiration} If I only knew how to get the mathematicians
+interested in transformation groups and their applications to
+differential equations. I am certain, absolutely certain in my case,
+that these theories in the future will be recognized as fundamental.
+\byline{Sophus Lie, in a letter to Adolph Mayer}
 \end{inspiration}
 
 \section{Terminology}
 
-\begin{problem}
-  Define something.
+\begin{problem} The word ``distribution'' is used throughout
+mathematics.  What is meant by a \textbf{distribution} in this course?
+\end{problem}
+
+\begin{problem} What does it mean to say that a distribution is
+\textbf{completely integrable}?
+\end{problem}
+
+\begin{problem} What is a \textbf{Lie subgroup}?
 \end{problem}
 
 \section{Numericals}
 
-\begin{problem}
-  Compute something.
+\begin{problem} Consider the form $\omega = dz - y \, dx \in
+\Omega^1(\R^3)$.  This is a \textbf{contact form}.  Compute $\omega
+\wedge d\omega$.
+
+  Is the distribution $\mathcal{D} = \ker \omega$ completely
+integrable?
 \end{problem}
 
 \section{Exploration}
 
-\begin{problem}
-  Explore something.
+\begin{problem} Again consider the form $\omega = dz - y \, dx \in
+\Omega^1(\R^3)$. A curve $\gamma : [a,b] \to \R^3$ is a
+\textbf{Legendrian curve} if $\gamma'(t) \in \ker \omega$ whenever $t
+\in (a,b)$. What points in $\R^3$ can be connected by a sequence of
+Legendrian curves?
+\end{problem}
+
+\begin{problem} On $M = \R^2 \setminus \{ (0,0) \}$, consider the
+vector fields $A, B \in \Gamma(TM)$ given by
+  \begin{align*}
+    A_{(x,y)} &= \frac{1}{\sqrt{x^2 + y^2}} \left( \phantom{-} x \, \frac{\partial}{\partial x} + y\, \frac{\partial}{\partial y} \right), \\
+    B_{(x,y)} &=  \frac{1}{\sqrt{x^2 + y^2}} \left( -y \,\frac{\partial}{\partial x} + x\, \frac{\partial}{\partial y} \right). \\
+  \end{align*} Around some point $p \in M$, is there a neighborhood $U
+\ni p$ and coordinates $a, b : U \to \R$ so that $A =
+\frac{\partial}{\partial a}$ and $B = \frac{\partial}{\partial b}$?
+Why or why not?
+\end{problem}
+
+\begin{problem} Suppose $G$ is a Lie group with Lie algebra
+$\mathfrak{g} = T_e G$, and suppose there is a Lie subalgebra
+$\mathfrak{h} \subset \mathfrak{g}$.  Build a completely integrable
+distribution using $\mathfrak{h}$.
+Can you use this distribution to find a Lie subgroup $H$ of $G$ with
+$\mathfrak{h} = T_e H$?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
+\begin{problem} If $X, Y \in \Gamma(TG)$ are left-invariant vector
+fields on the Lie group $G$, then their bracket $[X,Y]$ is also
+left-invariant.
+\end{problem}
+
 \begin{problem}
-  Something that may be wrong.
+For a vector field $X \in \Gamma(TM)$ and $k$-form $\omega \in \Omega^\star(M)$,
+\[
+  {\mathcal {L}}_{X}\omega =d(\iota _{X}\omega )+\iota _{X}d\omega.
+\]
+This is \textbf{Cartan's magic formula}.
 \end{problem}
 
 \end{document}
