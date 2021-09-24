@@ -2,18 +2,50 @@
 \input{preamble}
 \author{Jim Fowler}
 \course{Math 6701}
-\date{Week 6: Frobenius theorem}
-
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\date{Week 6: Frobenius' theorem}
 
 \begin{document}
 \maketitle
+
+We have previously seen that a vector field gives rise to integral
+curves.  This is a fact that can also be interpreted as a statement
+about coordinates: any vector field, in suitable local coordinates, is
+$\partial_{x_1}$.
+
+What if we have multiple vector fields?  Is it always the case, given
+a couple vector fields, that we can find local coordinates
+$(x_1,x_2,\ldots)$ so that these two vector fields are
+$\partial_{x_1}$ and $\partial_{x_2}$?  The bracket serves as an
+obstruction to doing so.  Our study of multiple vector fields leads to
+generalizing integral curves to \textbf{integral manifolds}, where we
+consider subbundles of the tangent bundle---here, called
+\textbf{distributions}---and attempt to foliate our manifold by
+submanifolds whose tangent bundles are exactly those distributions,
+i.e., we seek conditions on which the distribution is
+\textbf{completely integrable}.  The theorem behind this story is the
+celebrated \textbf{Frobenius' theorem} and serves as our goal this
+week.
 
 From Morita's \textit{Geometry of Differential Forms}, read
 \begin{itemize}
 \item 2.3 Frobenius theorem
 \item 2.4 A few facts
-\end{itemize}
+\end{itemize} Frobenius' theorem is a powerful generalization of the
+uniqueness and existence theorem for ODEs, and makes good use of the
+terminology we have painstakingly built in this course.  In
+particular, differential forms provide a useful perspective, dual to a
+``bare hands'' perspective involving the bracket of vector fields.
+Having seen formulas which relate the bracket to exterior
+differention, perhaps these relationships do not seem so surprising to
+you now.
+
+And yet, Frobenius' theorem very power and generality can make it seem
+useless.  Where will I ever use a theorem of such generality?  The
+problem set invites you to consider the special case of Lie subgroups,
+where the involutive hypothesis of Frobenius' theorem is suddenly the
+most natural thing in the world.  And digging deeper into Lie
+subgroups will reinforce the difference between embeddings and
+immersions, making connections with our prior learning.
+
+
 \end{document}
