@@ -3,40 +3,84 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
-\begin{inspiration}
-  Some words
-  \byline{A Person}
+\begin{inspiration} The final theorem of our triad, Stokes' theorem,
+first appeared in print in 1854.  George Stokes had for several years
+been setting the Smith's Prize Exam at Cambridge, and in the February,
+1854, examination, question \#8 is the following\ldots \byline{Victor
+  Katz, in \textit{The History of Stokes' Theorem}}
+% Math magazine, Vol. 52, No. 3 (May, 1979), pp. 146-156.
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  For a smooth manifold $M$, define $H^k_{\dR}(M)$.
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+Consider the form $\omega \in \Omega^k(\R^n)$ given by
+\[
+  \omega = \sum_{i=1}^n (-1)^{i-1} x_i \, dx_1 \wedge \cdots \wedge \widehat{dx_i} \wedge \cdots \wedge dx_n.
+\] Let $S^{n-1} \subset \R^n$ be the unit sphere with $i : S^{n-1} \to
+\R^n$ the inclusion.
+
+Compute $d\omega$.
+
+
+Then compute $\int_{S^{n-1}} \omega$, perhaps
+using ``well-known'' facts about volume.
+\end{problem}
+
+\begin{problem}
+ Is $\omega$ closed?  Is $\omega$ exact?  Is $i^\star \omega$ closed?  Exact?
 \end{problem}
 
 \section{Exploration}
 
-\begin{problem}
-  Explore something.
+\begin{problem} Show that the wedge product of forms descends to a
+product on cohomology.
+\end{problem}
+
+\begin{problem} The $n$-disk $D^n$ has the $(n-1)$-sphere as its
+boundary; write $i : S^{n-1} \to D^n$ for the inclusion map.  We say
+that $r : S^{n-1} \to D^n$ is a \textbf{retraction} if $r \circ i =
+\id_{\partial D^n}$.
+
+Can you find a retraction of the disk onto its boundary?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+ A smooth map $f : D^n \to D^n$ has a fixed point. 
+\end{problem}
+
+
+\begin{problem}
+  Suppose the smooth manifold $M$ is decomposed as the union of two open sets $M = U \cup V$ with $U \cap V \neq \varnothing$.  Then there is a short exact sequence of de Rham complexes
+  \[
+    0 \longrightarrow \Omega^\star(U \cup V) \longrightarrow \Omega^\star(U) \oplus \Omega^\star(V) \longrightarrow \Omega^\star(U \cap V) \longrightarrow 0.
+ \]
+\end{problem}
+
+\begin{problem}
+  The de Rham cohomology of the $n$-sphere $S^n$ is
+  \[
+    H_{\dR}^k(S^n) = \begin{cases}
+      \R & \mbox{if $k = 0$,} \\
+      0 & \mbox{if $k \neq 0, \, k \neq n$, and }\\
+      \R & \mbox{if $k = n$.}
+      \end{cases}
+  \]
+\end{problem}
+
+\begin{problem}
+  Let $X \in \Gamma(TS^n)$ be a vector field.  For all $p \in S^n$, the vector $X_p$ is nonzero. 
 \end{problem}
 
 \end{document}

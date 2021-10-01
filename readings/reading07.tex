@@ -4,17 +4,48 @@
 \course{Math 6701}
 \date{Week 7: Homology and cohomology}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
-From Morita's \textit{Geometry of Differential Forms}, read
+We've been thinking of forms mainly as ``covector fields'' but this
+week, we interpret forms as integrands.  Note that forms transform
+appropriately, i.e., if we walk over a parameterized submanifold twice
+as fast and feed the resulting velocity vectors into a form and sum,
+we end up summing quantities which are twice as large but for half as
+much time.  By defining the integral of differential forms and meeting
+Stokes' theorem, we will see the fundamental theorem of calculus in
+its best form.
+
+To get started, from Morita's \textit{Geometry of Differential Forms}, read
 \begin{itemize}
 \item 3.1 Homology of manifolds
 \item 3.2 Integral of differential forms and the Stokes theorem
 \item 3.3 The de Rham theorem
-\end{itemize}
+\end{itemize} Having seen the fundamental theorem of calculus in its
+best form, it is appropriate then to consider how the fundamental
+theorem might \textit{fail} on manifolds.  This failure is measured by
+\textbf{de Rham cohomology}, and this week we meet \textbf{homology}
+and the \textbf{de Rham theorem} which relates our computations
+involving forms, the closed forms, the exact forms, back to a more
+basic notion of (co)homology.  The proof of the de Rham theorem and
+the Poincar\'e lemma will be postponed to next week, but even
+formulating the relationship between these different formulations of
+(co)homology will be interesting.  What exactly does it mean for these
+two homology theories to be naturally isomorphic?
+
+Ultimately, our study of differential forms is really getting at the
+topology of smooth manifolds.  Questions about whether a form like
+$d\theta$ on the circle is (despite the notation!) actually the
+exterior derivative of a function is a question which detects the
+``hole'' in the circle.  Cup products, which might seem hard to
+understand from the perspective of singular cohomology, are as easy as
+the exterior product, i.e., wedging forms.  This is a big payoff of
+having taken a course in smooth manifolds: you are now armed with
+something concrete enough to guide your way through a deeper study of
+cohomology.
+
+If you are looking for additional resources, I thoroughly recommend
+Bott and Tu's book \textit{Differential Forms in Algebraic Topology}
+which does this deeper digging into the algebraic topology.
+
 \end{document}
