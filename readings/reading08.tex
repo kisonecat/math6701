@@ -2,17 +2,43 @@
 \input{preamble}
 \author{Jim Fowler}
 \course{Math 6701}
-\date{Week 8: Poincare lemma}
+\date{Week 8: Poincar\'e lemma}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\DeclareMathOperator{\dR}{dR}
 
 \begin{document}
 \maketitle
+
+Last week was intense: we're moving at a very high speed!  This week
+and the next we will continue to discuss de Rham cohomology; we'll
+cycle through this material again in more detail, finally giving
+proofs for some of the machinery that we previously only learned how
+to use.  Why is de Rham cohomology related to singular cohomology?
+Why do homotopic maps induce the same map on cohomology?  How do we
+actually \textit{compute} the cohomology of any spaces we care about?
 
 From Morita's \textit{Geometry of Differential Forms}, read
 \begin{itemize}
 \item 3.4 Proof of the de Rham theorem
 \end{itemize}
+
+The first goal this week is the \textbf{Pincar\'e lemma} which states
+that $H_{\dR}^k(B^n) = 0$ when $k > 0$.  In words, when $k > 0$, every
+closed $k$-form on the $n$-ball $B^n$ is exact.  Stated differently,
+the de Rham cohomology of the ball is trivial; it's the same as
+$H^k(\mbox{point})$, which is the same as $H^k(B^n)$.  One perspective
+on the Poincar\'e lemma is that closed forms are locally exact; this
+means that de Rham cohomology is truly detecting ``global'' features
+of the manifold, precisely because it can't detect local phenomena.
+
+But the Poincar\'e lemma is important for a deeper reason.  Knowing
+that de Rham cohomology and singular cohomology agree on basic sets,
+and knowing that they are both computed the same way (e.g., through
+Mayer-Vietoris), ultimately means that singular cohomology and de Rham
+cohomology agree.  We've already seen the map that realizes this
+identification: we get a cochain from a form $\omega$ by integrating
+the form on a chain.
+
+As always, I appreciate how engaged you are during lecture.
+
 \end{document}

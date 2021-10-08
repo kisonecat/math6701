@@ -3,40 +3,69 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
-\begin{inspiration}
-  Some words
-  \byline{A Person}
+\begin{inspiration} As I see it at last it was my lot to plant the
+harpoon of algebraic topology into the body of the whale of algebraic
+geometry. But I must not push the metaphor too far.  \byline{Solomon
+Lefschetz, in \textit{A page of mathematical autobiography}, 1968}
+%Bull. Amer. Math. Soc. 74 (1968), 854-879.}
 \end{inspiration}
+
+\textbf{Scheduling note:} Thursday and Friday are holidays. \\[1ex] This problem set can be turned in on Wednesday or on Monday.
 
 \section{Terminology}
 
+\begin{problem} Let $M, N$ be connected, oriented, closed smooth
+$n$-manifolds. \\ For a smooth map $f : M \to N$, what is the
+\textbf{degree} of the map $f$?
+\end{problem}
+
 \begin{problem}
-  Define something.
+ Define $H_c^k(M)$, de Rham cohomology with compact support. 
+\end{problem}
+
+\begin{problem}
+  Again let $M, N$ be connected, oriented, closed smooth $n$-manifolds.\\  What is the \textbf{connected sum} of $M$ and $N$, written $M \# N$?
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+Compute $H_{\dR}^k(\Sigma_g)$.  Recall that $\Sigma_g = T^2 \# \cdots \# T^2$ with $g$ copies of the torus $T^2$.
 \end{problem}
 
 \section{Exploration}
 
-\begin{problem}
-  Explore something.
+\begin{problem} For a closed, connected, oriented manifold $M$, our
+solution to \ref{degree-one-to-sphere} produced a degree one map $M
+\to S^n$. \\[1ex]  Is there necessarily a degree one map $S^n \to M$?
+\end{problem}
+
+\begin{problem} In \ref{no-retraction}, we saw that there is no
+retraction of a disk onto its boundary.  \\[1ex] For a connected,
+oriented, compact, smooth manifold $M$ with boundary $\partial M$, is
+there a retraction of $M$ onto $\partial M$?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+  Let $X$ be the disjoint union of countably many points.
+  Then
+ \[H^0(X \times X) \cong H^0(X) \otimes H^0(X).\]
+This is Example~9.14 from Bott--Tu.
 \end{problem}
+
+\begin{problem} % salvage to connected
+If the smooth $n$-manifold $M$ is not orientable, then $H_{\dR}^n(M) = 0$.
+\end{problem}
+
+\begin{problem} For a map $f : M \to N$, there are induced maps
+$f^\star : H_c^k(N) \to H_c^k(M)$ and $f_\star : H_c^k(M) \to
+H_c^k(N)$.
+\end{problem} % proper maps pullback, covariant for inclusions
+
 
 \end{document}
