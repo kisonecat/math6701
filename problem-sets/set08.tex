@@ -3,40 +3,63 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  Vietoris lived to be 110 years and 309 days old, and became the oldest verified Austrian man ever.
+  \byline{The Wikipedia article on Leopold Vietoris}
 \end{inspiration}
+
+With the Fall Break, this shorter problem set is now \textbf{extra
+credit}.
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  What is a \textbf{symplectic} manifold?
+\end{problem}
+
+\begin{problem}
+ For a map $f : S^{2n-1} \to S^n$, define the \textbf{Hopf invariant} $H(f)$.
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+For the Hopf map $f : S^3 \to S^2$ from \ref{hopf-map}, compute the Hopf invariant $H(f)$.
 \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+  In defining mapping degree last week, we used a \textbf{volume form}.
+
+  If $\omega \in H_{\dR}^2(M)$ is a symplectic form, show that $\omega^n$ is a volume form.
+  \end{problem}
+
+  \begin{problem}
+  Does $S^2 \times S^2$ admit a symplectic form?
+\end{problem}
+
+\begin{problem} The word ``complex'' is Latin, while ``symplectic'' is
+built from the same words, but in Greek (a process the linguists call
+a \textit{calque}).  The underlying meaning is a ``tying together'' so
+what does a symplectic form tie together?  A symplectic form $\omega$
+``ties together'' the tangent and cotangent spaces.  Given a form $dH
+\in \Omega^1(M)$, the symplectic form can be used to produce a vector
+field $V_H \in \Gamma(TM)$.
+
+So why do we assume that $\omega$ is closed?  Use \ref{cartan-formula}
+to show that if $\omega$ is closed, then $\omega$ is constant along
+flow lines of $V_H$.
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
-\begin{problem}
-  Something that may be wrong.
+\begin{problem} For odd $n$ and smooth maps $f : S^{2n-1} \to S^n$,
+the Hopf invariant $H(f)$ vanishes.
 \end{problem}
+
 
 \end{document}
