@@ -3,16 +3,40 @@
 \author{Jim Fowler}
 \course{Math 6701}
 \date{Week 9: Applications of cohomology}
-
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\DeclareMathOperator{\dR}{dR}
 
 \begin{document}
 \maketitle
 
-From Morita's \textit{Geometry of Differential Forms}, read
+I've had mixed feelings about the last couple weeks -- there's a lot
+happening, a lot of machinery.  And we've already seen a number of
+significant applications, like the Brouwer fixed point theorem (albeit
+for smooth maps!) and the fact that the two-sphere does not support a
+nowhere vanishing vector field -- though we managed to get a vector
+field with a \textit{single} zero on a previous homework, by paying
+the price of having more complicated behavior around that zero.
+
+This week is called ``applications\ldots'' so are there more
+applications?  Of course!  Cohomology is extraordinarily important and
+provides an organizing principle for a ton of mathematics.  For this
+week, open Morita's \textit{Geometry of Differential Forms} and read
 \begin{itemize}
 \item 3.5 Applications of the de Rham theorem
-\end{itemize}
+\end{itemize} We've already seen \textbf{mapping degree} previously,
+but this week we'll see how to use cohomology to uncover an invariant
+of maps $S^3 \to S^2$, namely the \textbf{Hopf invariant}.  Having
+previously seen the Hopf map as a particularly nice map from $S^3$ to
+$S^2$, a natural question is: what's the Hopf invariant of the Hopf
+map?  We will also meet \textbf{Massey products} which is an
+opportunity to remember our prior experience with the Heisenberg
+group.
+
+There's another strand of discussion this week around the K\"unneth
+formula.  This appears in a homework exercise in the \textit{next}
+chapter of Morita, where the machinery of harmonic forms makes it
+possible to show that the map $H_{\dR}^\star(M) \otimes
+H_{\dR}^\star(N) \to H_{\dR}^\star(M \times N)$.  Given this, perhaps
+the K\"unneth formula will serve as a useful bridge to what comes
+next.
+
 \end{document}
