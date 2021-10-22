@@ -3,40 +3,63 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+ With the restoration of geometry to its rightful place in the mathematical scheme the process of fragmentation which had been doing so much harm to mathematics has been reversed, and we may look forward to the day in which there are no longer analysts, algebraists, geometers and so on, but simply mathematicians.
+  \byline{Sir William Vallance Douglas Hodge}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+ What is the Euler characteristic $\chi(M)$ of a smooth manifold $M$? 
+\end{problem}
+
+\begin{problem}
+What is a K\"ahler manifold?
 \end{problem}
 
 \section{Numericals}
 
+\begin{problem} The map $\star \circ \star$ is multiplication by $\pm
+1$.  Determine the sign.
+\end{problem}
+
 \begin{problem}
-  Compute something.
+  Show that the Laplacian $\Delta : \Omega^k(\R^n) \to \Omega^k(\R^n)$  satisfies
+  \[
+    \Delta \left( f \, dx_{i_1} \wedge \cdots \wedge dx_{i_k} \right) = \pm \left( \sum_{j=1}^k \frac{\partial f}{\partial {x_{i_j}}^2} \right) \, dx_{i_1} \wedge \cdots \wedge dx_{i_k}
+  \]
+and determine the sign.
 \end{problem}
 
 \section{Exploration}
 
+\begin{problem} For an oriented closed $n$-manifold $M$, show that
+$\omega \in \Omega^k(M)$ is harmonic if and if only if $\star \omega
+\in \Omega^{n-k}(M)$
+\end{problem}
+
 \begin{problem}
-  Explore something.
+ For an integer $n \in \Z$, can you find a manifold $M$ so that $\chi(M) = n$? 
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
+\begin{problem} % orientable
+ For a smooth $(4n+2)$-manifold $M$, the Euler characteristic $\chi(M)$ is even.
+\end{problem}
+
 \begin{problem}
-  Something that may be wrong.
+  For oriented closed manifolds $M$, $N$, consider the product $M \times N$ with projection maps $p_1 : M \times N \to M$ and $p_2 : M \times N \to N$.
+
+  The map
+  \[
+    {p_1}^\star \otimes {p_2}^\star : \sum_{i+j = k} H_{dR}^i(M) \otimes H_{dR}^j(N) \to H_{dR}^k(M \times N)
+  \]
+  is injective.
 \end{problem}
 
 \end{document}
