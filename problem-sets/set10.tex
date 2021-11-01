@@ -3,40 +3,68 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\DeclareMathOperator{\GL}{GL}
 
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  Meta-theorem 2.2.3: Any canonical construction in linear algebra gives rise to a geometric version for holomorphic vector bundles. \byline{Daniel Huybrechts in \textit{Complex Geometry: An Introduction}}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  What is a vector bundle?  What is a \textit{complex} vector bundle?
+\end{problem}
+
+\begin{problem}
+ For a vector bundle $E \to Y$ over a smooth manifold $Y$, and a smooth map $f : X \to Y$, define the pullback $f^\star E$.
+\end{problem}
+
+\begin{problem}
+  What is the tautological line bundle over $\RP^n$?
 \end{problem}
 
 \section{Numericals}
 
-\begin{problem}
-  Compute something.
+\begin{problem} Suppose $E \to M$ is an $n$-dimensional real vector
+bundle over a smooth manifold $M$, with an open cover $\{U_i\}$
+trivializing the bundle.  The transition functions are maps $g_{ij} :
+U_i \cap U_j \to \GL_n(\R)$.
+
+  Compute the transition functions for the dual bundle $E^\star \to M$.
 \end{problem}
 
 \section{Exploration}
 
 \begin{problem}
-  Explore something.
+  Is $TS^1$ trivial?  What about $TS^3$?  What about $TG$ for a Lie group $G$?
+\end{problem}
+
+\begin{problem}
+ Is $TS^2$ trivial?   Why or why not?
+\end{problem}
+
+\begin{problem} If $TM$ is not trivial but $E \to M$ is trivial, can
+  it happen that $TM \oplus E$ is trivial?
+
+  We say that $TM$ is
+\textbf{stably trivial} in this case.
+\end{problem}
+
+\begin{problem} Is the tautological line bundle over $\RP^1$
+isomorphic to $T\RP^1$?
+\end{problem}
+
+\begin{problem}
+  Classify line bundles over $S^1$ up to isomorphism.
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+For a closed manifold $M$ and a vector bundle $E \to M$, there is a bundle $F \to M$ so that $E \oplus F$ is trivial.
 \end{problem}
 
 \end{document}
