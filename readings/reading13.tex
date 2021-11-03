@@ -4,16 +4,36 @@
 \course{Math 6701}
 \date{Week 13: Characteristic classes}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
-
 \begin{document}
 \maketitle
+
+As promised, this week is all about \textbf{characteristic classes}.
+Because characteristic classes appear throughout mathematics (okay, at
+least in algebraic geometry, in the topology of manifolds), there are
+various perspectives on these objects.  In terms of how they're
+constructed, we see that by choosing a connection, we can build
+various closed forms related to the curvature of the connection, and
+that in certain cases, the resulting cohomology classes do
+\textit{not} depend on the choice of the connection.
 
 From Morita's \textit{Geometry of Differential Forms}, read
 \begin{itemize}
 \item 5.5 Chern classes
 \item 5.6 Euler classes
 \end{itemize}
+
+Another perspective has to do with how we build vector bundles.  A
+vector bundle can be built by pulling back a certain \textbf{universal
+bundle} which is as twisted as a bundle can be.  The base space of the
+universal bundle---the \textbf{classifying space}---supports some
+cohomology classes, and pulling back those classes provides cohomology
+classes that measure the twistedness of our given bundle.
+
+And that's a reason these characteristic classes are interesting: for
+a trivial bundle, the characteristic classes vanish, so these are
+cohomological invariants that measure how twisted the bundle is.
+These are ``natural'' invariants, in the sense that the pull back
+appropriately, i.e., the characteristic classes of the pulled back
+bundle are the pulled back characteristic classes.
+
 \end{document}
