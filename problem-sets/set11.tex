@@ -3,40 +3,79 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\DeclareMathOperator{\GL}{GL}
 
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+A connection on a bundle\ldots is a rule that identifies fibers of the bundle along paths in the base space.
+  \byline{Urs Schreiber in the \textit{nLab}}
 \end{inspiration}
 
 \section{Terminology}
 
-\begin{problem}
-  Define something.
+\begin{problem} For a smooth manifold $M$, what is meant by a
+\textbf{connection} on (or is it ``in'') the vector bundle $E \to M$?
+\end{problem}
+
+\begin{problem} Define $\Omega^k(M;E)$, the $E$-valued $k$-forms.
+\end{problem}
+
+\begin{problem} For a connection $\nabla$ on the vector bundle $E \to
+M$, define the curvature $F_\nabla$ as a 2-form with values in $\End(E)$.
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+  On a smooth manifold $M$ with an $n$-dimensional vector bundle $\pi : E \to M$, suppose $E$ is trivial over open subsets $U, V \subset M$, with trivializations
+  \begin{align*}
+    \varphi_U &: \pi^{-1}(U) \to U \times \R^n, \\
+    \varphi_V &: \pi^{-1}(V) \to V \times \R^n,
+  \end{align*}
+  and transition function $g_{UV} : U \cap V \to \GL_n(\R)$.
+
+  When there is a connection on the bundle $E$, we have connection
+forms $\omega_U$ and $\omega_V$ which are $n \times n$ matrices of
+$1$-forms on $U$ and $V$, respectively.
+
+  Verify that \(
+    \omega_V = {g_{UV}}^{-1} \cdot \omega_U \cdot g_{UV} + {g_{UV}}^{-1} \cdot dg_{UV}
+  \).
 \end{problem}
 
 \section{Exploration}
 
+\begin{problem} In light of the previous calculation, it is said that
+the connection form ``does not transform tensorially.''  What does
+that mean?
+\end{problem}
+
+\begin{problem} Verify that the curvature form \textit{does} transform
+as a tensor.
+\end{problem}
+
 \begin{problem}
-  Explore something.
+  Regard a connection $\nabla$ on the bundle $E \to M$ as a map $\nabla : \Omega^0(M;E) \to \Omega^1(M;E)$.  Then we can extend this to an \textbf{exterior covariant derivative} 
+  \[
+    d_{\nabla }:\Omega ^{k}(M;E)\to \Omega ^{k+1}(M;E)
+  \]
+  via the rule
+  \[
+    d_{\nabla }(\omega \otimes s)=d\omega \otimes s + (-1)^{\deg \omega} \omega \wedge \nabla s.
+  \]
+  Recall that $d^2 = 0$, and consequently the $\Omega^\star(M)$ forms a chain complex.
+
+  Is the same true for $\Omega^\star(M;E)$ with $d_\nabla$?  What is $d_\nabla \circ d_\nabla$?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+ The curvature two-form $F_\nabla$ is $d_\nabla$-closed, i.e., \(
+    d_\nabla F_\nabla = 0
+   \).
 \end{problem}
 
 \end{document}
