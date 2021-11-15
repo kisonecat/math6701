@@ -3,40 +3,84 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SU}{SU}
 
 \begin{document}
 \maketitle
 
-\begin{inspiration}
-  Some words
-  \byline{A Person}
+\begin{inspiration} The salient fact about the Levi-Civita parallelism
+is the result that it is the parallelism, and not the Riemannian
+metric, which accounts for most of the properties concerning
+curvature.  \byline{Shiing-Shen Chern}
+% in notes for math 352a at uchicago, spring 1952,
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+  For a $2n$-by-$2n$ skew-symmetric matrix $M$, what is the \textbf{Pfaffian} of $M$?
+\end{problem}
+
+\begin{problem}
+  For a complex vector bundle $E \to M$, define the \textbf{Chern class}
+  \[
+    c_k(E) \in H^{2k}(M;\R).
+  \]
+\end{problem}
+
+\begin{problem}
+  For a real oriented $\R^{2n}$-bundle $E \to M$, define the \textbf{Euler class}
+  \[
+    e(E) \in H^{2n}(M;\R).
+    \]
 \end{problem}
 
 \section{Numericals}
 
 \begin{problem}
-  Compute something.
+  For a connection $\nabla$ with curvature two-form $F_\nabla$, compute
+    $d(\trace F_\nabla)$.
 \end{problem}
 
 \section{Exploration}
 
+\begin{problem} Suppose the transition functions for a certain vector
+bundle $E \to M$ are in a Lie group $G$, i.e., for an open cover $\{
+U_i \}$ of $M$ trivializing the bundle, we have transition functions
+$g_{ij} : U_i \cap U_j \to G$.
+
+Explain why a connection $1$-form $\omega$ on $E$ takes values in the
+Lie algebra $T_e G$.
+\end{problem}
+
 \begin{problem}
-  Explore something.
+  For $M \in T_{\id} \SO(n)$, what is the trace of $M$?
+
+  What does this imply about the characteristic class $\trace F_\nabla$?
+\end{problem}
+
+\begin{problem}
+ For a complex bundle $E \to M$, can the transition functions be chosen to lie in the group $\SU(n)$?  
+\end{problem}
+
+\begin{problem}
+  For $M \in T_{\id} \SU(n)$, what can be said about the trace of $M$?
+
+  What does this imply about the characteristic class $\trace F_\nabla$?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+  For complex bundles $E \to M$ and $F \to M$, 
+    $c_k(E \oplus F) = c_k(E) c_k(F)$.
+\end{problem}
+
+\begin{problem}
+  Suppose $E \to M$ is an oriented $\R^{2n}$-bundle with $e(E) \neq 0$ and $f \in \Gamma(E)$.
+
+  Then there exists $p \in M$ so that $f(p) = 0$.
 \end{problem}
 
 \end{document}
