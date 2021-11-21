@@ -4,9 +4,8 @@
 \course{Math 6701}
 \date{Week 15: Fiber Bundles}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SO}{SO}
 
 \begin{document}
 \maketitle
@@ -14,7 +13,32 @@
 From Morita's \textit{Geometry of Differential Forms}, read
 \begin{itemize}
 \item 6.1 Fiber bundle and principal bundle
-\item 6.2 S1 bundles and Euler classes
+\item 6.2 $S^1$ bundles and Euler classes
 \item 6.3 Connections
-\end{itemize}
+\end{itemize} This material introduces \textbf{principal bundles},
+which are not \textit{principle} but rather \textit{principal} in the
+sense of ``first in order of importance.''  What exactly is principal
+about a principal bundle?
+
+A principal $\GL(V)$-bundle gives rise to an associated vector bundle,
+so in that sense, these $\GL(V)$-bundles are the ``main'' object, with
+the vector bundles somehow being produced from the principal bundles.
+And these principal bundles have some significant advantages: we were
+angry that the connection 1-form did not transform tensorially, but
+for principal bundles, the connection 1-forms are honest, globally
+defined 1-forms.
+
+There are other advantages: not every fiber bundle has vector space
+fibers, so armed with the notion of principal $G$-bundles, we can not
+only recover the story for vector bundles (through these
+``associated'' bundles) but also discuss examples beyond vector
+bundles, like circle bundles.
+
+Finally, thinking about principal $G$-bundles will enable us to
+consider ``reduction of structure'' and the various relationships
+between $G$-bundles and $H$-bundles.  We've seen examples of this
+(like the relationship between bundles with transtiion maps in
+$\GL(V)$ versus those with transition maps in $\SO(V)$) so this
+framework will help us understand the situation more generally.
+
 \end{document}
