@@ -3,40 +3,70 @@
 \author{Jim Fowler}
 \input{preamble}
 
-\usepackage{draftwatermark}
-\SetWatermarkText{Draft}
-\SetWatermarkScale{5}
+\DeclareMathOperator{\GL}{GL}
 
 \begin{document}
 \maketitle
 
 \begin{inspiration}
-  Some words
-  \byline{A Person}
+  Why is differential geometry the study of a connection on a principal bundle?
+  \byline{R.~W.~Sharpe in \textit{Differential Geometry: Cartan's Generalization of Klein's Erlangen Program}}
 \end{inspiration}
 
 \section{Terminology}
 
 \begin{problem}
-  Define something.
+ What is a fiber bundle? 
+\end{problem}
+
+\begin{problem}
+  What is a principal $G$-bundle?
+\end{problem}
+
+\begin{problem}
+  What is a principal $G$-connection on a principal $G$-bundle? 
 \end{problem}
 
 \section{Numericals}
 
-\begin{problem}
-  Compute something.
+\begin{problem} Suppose $G \subset \GL(V)$ and consider the principal
+$G$-bundle $G \to \{\star\}$, i.e., the principal $G$-bundle of $G$
+over the one point space $\star$.
+  
+Describe a principal $G$-connection on this bundle.  \textit{Hint:}
+ Consider the \textit{Mauer-Cartan form}.
 \end{problem}
 
 \section{Exploration}
 
+\begin{problem} Given a vector bundle $E \to M$, we can build $F(E)
+\to M$, the frame bundle associated to $E$.
+
+  Given a principal $\GL(\R^n)$-bundle on $M$, we can form an
+$n$-dimensional ``associated'' vector bundle on $M$.
+
+Are these procedures (of constructing the frame bundle and of
+constructing the associated vector bundle) inverse to each other?  Why
+or why not?
+\end{problem}
+
 \begin{problem}
-  Explore something.
+  Recall the Hopf map $f : S^3 \to S^2$.  Is this a principal $S^1$-bundle?
 \end{problem}
 
 \section{Prove or Disprove and Salvage if Possible (PODASIP)}
 
 \begin{problem}
-  Something that may be wrong.
+ Every principal $\Z/2\Z$-bundle is also a principal $S^1$-bundle. 
 \end{problem}
+
+\begin{problem} % oriented is a missing hypothesis
+ Every circle bundle is also a principal $S^1$-bundle. 
+\end{problem}
+
+\begin{problem}
+  If a vector bundle admits a global section, then it is trivial.
+\end{problem}
+
 
 \end{document}
